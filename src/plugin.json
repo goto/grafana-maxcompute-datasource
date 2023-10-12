@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "datasource",
+  "name": "MaxCompute",
+  "id": "manassehzhou-maxcompute-datasource",
+  "metrics": true,
+  "backend": true,
+  "alerting": true,
+  "executable": "gpx_maxcompute_datasource",
+  "info": {
+    "description": "Aliyun MaxCompute as a (Backend) Datasource",
+    "author": {
+      "name": "Manasseh Zhou",
+      "url": "https://github.com/ManassehZhou"
+    },
+    "keywords": ["aliyun", "maxcompute"],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/ManassehZhou/grafana-maxcompute-datasource"
+      }, {
+        "name": "MaxCompute Docs",
+        "url": "https://help.aliyun.com/zh/maxcompute/"
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "configure datasource",
+        "path": "img/config-datasource.png"
+      }, {
+        "name": "simple query",
+        "path": "img/simple-query.png"
+      }
+    ],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=10.0.0",
+    "plugins": []
+  }
+}
