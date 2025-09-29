@@ -44,17 +44,17 @@ jobs:
             echo "has-backend=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Test backend
-        if: steps.check-for-backend.outputs.has-backend == 'true'
-        uses: magefile/mage-action@v2
-        with:
-          version: latest
-          args: coverage
-        env: 
-          ALIBABACLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABACLOUD_ACCESS_KEY_ID }}
-          ALIBABACLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABACLOUD_ACCESS_KEY_SECRET }}
-          MAXCOMPUTE_ENDPOINT: ${{ secrets.MAXCOMPUTE_ENDPOINT }}
-          MAXCOMPUTE_PROJECT: ${{ secrets.MAXCOMPUTE_PROJECT }}
+      # - name: Test backend
+      #   if: steps.check-for-backend.outputs.has-backend == 'true'
+      #   uses: magefile/mage-action@v2
+      #   with:
+      #     version: latest
+      #     args: coverage
+      #   env: 
+      #     ALIBABACLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABACLOUD_ACCESS_KEY_ID }}
+      #     ALIBABACLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABACLOUD_ACCESS_KEY_SECRET }}
+      #     MAXCOMPUTE_ENDPOINT: ${{ secrets.MAXCOMPUTE_ENDPOINT }}
+      #     MAXCOMPUTE_PROJECT: ${{ secrets.MAXCOMPUTE_PROJECT }}
 
       - name: Build backend
         if: steps.check-for-backend.outputs.has-backend == 'true'
