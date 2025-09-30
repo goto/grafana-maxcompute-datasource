@@ -1,6 +1,6 @@
 {
   "name": "maxcompute-datasource",
-  "version": "0.0.3-beta",
+  "version": "0.0.3",
   "description": "",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
