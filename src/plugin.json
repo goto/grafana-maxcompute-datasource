@@ -1,17 +1,17 @@
 {
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "datasource",
-  "name": "MaxCompute",
-  "id": "manassehzhou-maxcompute-datasource",
+  "name": "Alibaba Cloud MaxCompute",
+  "id": "goto-maxcompute-datasource",
   "metrics": true,
   "backend": true,
   "alerting": true,
   "executable": "gpx_maxcompute_datasource",
   "info": {
-    "description": "Aliyun MaxCompute as a (Backend) Datasource",
+    "description": "Alibaba Cloud MaxCompute as a (Backend) Datasource",
     "author": {
-      "name": "Manasseh Zhou",
-      "url": "https://github.com/ManassehZhou"
+      "name": "Goto",
+      "url": "https://github.com/goto"
     },
     "keywords": ["aliyun", "maxcompute"],
     "logos": {
@@ -21,7 +21,7 @@
     "links": [
       {
         "name": "Github",
-        "url": "https://github.com/ManassehZhou/grafana-maxcompute-datasource"
+        "url": "https://github.com/goto/grafana-maxcompute-datasource"
       }, {
         "name": "MaxCompute Docs",
         "url": "https://help.aliyun.com/zh/maxcompute/"
