@@ -1,14 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "datasource",
-  "name": "MaxCompute Beta",
+  "name": "Goto MaxCompute",
   "id": "goto-maxcompute-datasource",
   "metrics": true,
   "backend": true,
   "alerting": true,
   "executable": "gpx_maxcompute_datasource",
   "info": {
-    "description": "[BETA] Aliyun MaxCompute as a (Backend) Datasource",
+    "description": "Goto Aliyun MaxCompute as a (Backend) Datasource",
     "author": {
       "name": "Manasseh Zhou",
       "url": "https://github.com/ManassehZhou"
